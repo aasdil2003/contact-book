@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const contactRoutes = require('./routes/contactRoutes');
 
-dotenv.config(); 
+dotenv.config(); // Use this instead of require('dotenv').config();
 
 const app = express();
 app.use(express.json());
