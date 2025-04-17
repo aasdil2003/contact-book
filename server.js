@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const contactRoutes = require('./routes/contactRoutes');
 
-dotenv.config(); // Use this instead of require('dotenv').config();
+dotenv.config();
 
 const app = express();
 app.use(express.json());
@@ -22,6 +22,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
 
 
 
